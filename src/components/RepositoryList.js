@@ -6,8 +6,10 @@ import _ from "lodash"
 
 
 const RepositoryList = ({ repositories }) => (
+
  <MDBContainer className="mt-5">
   <MDBRow>
+
    { _.map(repositories.nodes, (repository, i) => (
   <MDBCol key={i} lg="4" md="6" sm="12">
    <MDBCard className="m-2 w-100">
@@ -30,8 +32,10 @@ const RepositoryList = ({ repositories }) => (
      </MDBCard>
     </MDBCol>
    ))}
+   
   </MDBRow>
 </MDBContainer>
+
 )
 
 
