@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import '../components/index.css';
+import './index.css';
 import RepositoryList from "../components/RepositoryList"
 import NavBar from "../components/NavBar"
 
@@ -35,10 +35,9 @@ export const query = graphql`
             }
           }
         }
-
+      }
     }
   }
-}
 `
 
 
